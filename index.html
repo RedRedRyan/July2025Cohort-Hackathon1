@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ryan Kipkorir</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Ryan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/Red.jpg" alt="Ryan Kipkorir" class="section__pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Ryan </h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/resume.pdf', '_blank')">
+                    Download Resume
+                </button>
+                <button 
+                class="btn btn-color-1" 
+                onclick="location.href='./#contact'">
+                    Contact Me
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My linkedin"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/ryan-kipkorir-4b0a1b1b2/'"
+                >
+                <img 
+                src="./assets/github.png" 
+                alt="My github"
+                class="icon"
+                onclick="location.href='https://www.github.com/Redredryan/'"
+                >
+            </div>
+        </div>
+    </section>
+    <section id="about">
+    </section>
+    <script src="script.js"></script>
+    
+
+    </section>
+</body>
+</html>
